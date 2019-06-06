@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/3b58bb7a59.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Rock, Paper, Scissors</a>
+    </nav>
+
+    <main class="game-content">
+
+            <div class="row" id="game-buttons-row">
+                <div class="col-sm">
+                    <div class="icon-container" id="rock">
+                        <i class="fas fa-hand-rock" id="rock-icon"></i>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="icon-container" id="paper">
+                        <i class="fas fa-hand-paper" id="paper-icon"></i>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="icon-container" id="scissors">
+                        <i class="fas fa-hand-scissors" id="scissors-icon"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row" id="cards-row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Your choice</h5>
+                            <hr>
+                            <div id="your-choice"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                        <h5 class="card-title">Score</h5>
+                        <hr>
+                            <div id="score">
+                                <span id="user-score">0</span> : <span id="computer-score">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer's choice</h5>
+                            <hr>
+                            <div id="computer-choice"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <section class="message">
+            <span id="message"></span>
+        </section>
+
+        <section class="reset-button">
+            <button type="button" class="btn btn-danger" id="reset">Reset</button>
+        </section>
+    </main>
+
+    <footer>
+        <span>Made with <i class="fas fa-mug-hot"></i> and <i class="fas fa-heart"></i> !</span>
+    </footer>
+    <script defer src="js/app.min.js"></script>
+</body>
+</html>
